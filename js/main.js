@@ -15,7 +15,7 @@ const commentMessages = [
   'Когда вы делаете фотографию, хорошо бы убирать палец из кадра. В конце концов это просто непрофессионально.',
   'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.',
   'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.',
-  'Лица у людей на фотке перекошены, как будто их избивают. Как можно было поймать такой неудачный момент?!'
+  'Лица у людей на фотке перекошены, как будто их избивают. Как можно было поймать такой неудачный момент?!',
 ]
 
 const descriptionMessages = [
@@ -23,7 +23,7 @@ const descriptionMessages = [
   'Превосходно.',
   'Лучше удалите.',
   'Не делайте так больше никогда!',
-  'Ваша работа - фотограф.'
+  'Ваша работа - фотограф.',
 ]
 
 const nameMessages = [
@@ -31,14 +31,14 @@ const nameMessages = [
   'Олег.',
   'Наталья.',
   'Хашогги.',
-  'Немезида.'
+  'Немезида.',
 ]
 
 const comment = {
   id: getRandomInteger(1, 200),
   avatar: `img/avatar-${getRandomInteger(1, 6)}.svg`,
   message: commentMessages[getRandomInteger(0, commentMessages.length - 1)],
-  name: nameMessages[getRandomInteger(0, nameMessages.length - 1)]
+  name: nameMessages[getRandomInteger(0, nameMessages.length - 1)],
 }
 
 const photo = {
@@ -46,8 +46,8 @@ const photo = {
   url: `photo/${getRandomInteger(1, 25)}.jpg`,
   description: descriptionMessages[getRandomInteger(0, descriptionMessages.length - 1)],
   likes: getRandomInteger(15, 200),
-  comments: new Array(2).fill(comment)
+  comments: new Array(2).fill(comment),
 }
 
 const arrayOfPhotos = new Array(25).fill(photo);
-console.log(arrayOfPhotos)
+console.log(arrayOfPhotos);
